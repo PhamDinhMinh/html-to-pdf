@@ -23,6 +23,20 @@ Mở http://localhost:3000
 
 Trang chính: `src/app/page.tsx`
 
+## HTML → PDF
+
+- UI: mở http://localhost:3000 và dán HTML vào ô textarea, bấm **Convert to PDF** để tải file.
+- API: `POST /api/pdf` với JSON body:
+
+```json
+{
+  "html": "<!doctype html><html>...</html>",
+  "filename": "document.pdf"
+}
+```
+
+Ghi chú: endpoint đang chặn request mạng ra ngoài và tắt JavaScript khi render (để an toàn hơn). Nếu cần ảnh/CSS, hãy inline (CSS trong `<style>` và ảnh dạng `data:`).
+
 ## UI (Tailwind + shadcn/ui)
 
 - Tailwind v4 nằm ở `src/app/globals.css`.
