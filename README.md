@@ -23,6 +23,30 @@ Mở http://localhost:3000
 
 Trang chính: `src/app/page.tsx`
 
+## UI (Tailwind + shadcn/ui)
+
+- Tailwind v4 nằm ở `src/app/globals.css`.
+- Cấu hình shadcn/ui: `components.json`.
+- UI components: `src/components/ui/*` (đã có sẵn `button.tsx`).
+- Utils: `src/lib/utils.ts` (hàm `cn`).
+
+Thêm component mới:
+
+```bash
+npx shadcn@latest add input
+npx shadcn@latest add dialog
+```
+
+Dùng component:
+
+```tsx
+import { Button } from "@/components/ui/button";
+
+export function Example() {
+  return <Button>Click me</Button>;
+}
+```
+
 ## Lint & Format
 
 ```bash

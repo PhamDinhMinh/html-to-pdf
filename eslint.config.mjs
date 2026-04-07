@@ -12,6 +12,12 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+
+    // Yarn PnP (generated files)
+    ".pnp.cjs",
+    ".pnp.loader.mjs",
+    ".yarn/**",
+    "yarn.lock",
   ]),
 ]);
 
