@@ -1,0 +1,18 @@
+# dependencies
+node_modules
+
+# next.js
+.next
+out
+build
+
+# tooling
+coverage
+.vercel
+
+# generated
+next-env.d.ts
+package-lock.json
+
+# husky internals
+.husky/_
