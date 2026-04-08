@@ -7,7 +7,8 @@ import { cn } from "@/lib/utils";
 
 const NAV_ITEMS = [
   { href: "/", label: "HTML → PDF" },
-  { href: "/youtube", label: "YouTube video" },
+  { href: "/youtube", label: "Video cleanup" },
+  { href: "/story", label: "Story" },
 ] as const;
 
 function isActivePath(pathname: string, href: string) {
